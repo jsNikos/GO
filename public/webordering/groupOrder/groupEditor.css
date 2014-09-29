@@ -1,3 +1,7 @@
 #groupOrderInvitation[data-role="edit"] .invitee:hover .remove{
 	visibility: hidden;
 }
+
+#groupOrderInvitation[data-role="edit"] .smallNote{
+	display: none;
+}

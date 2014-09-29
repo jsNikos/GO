@@ -48,6 +48,10 @@ function(GroupInviterView){
 			});			
 		}	
 		
+		this.findDialogTitle = function(){
+			return 'Add more friends to this group order';
+		};
+		
 		/**
 		 * @overriden
 		 */

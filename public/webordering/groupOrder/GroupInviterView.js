@@ -52,7 +52,7 @@ function(friendsEditorHtml, inviteeHtml, friendInputHtml, moment){
 			
 			$el.dialog({	
 				width: '',
-				title: LocaleString.get('Invite your friends for a group order'),
+				title: LocaleString.get(scope.findDialogTitle()),
 				modal: true,
 				resizable: false,
 				draggable: false,
@@ -70,6 +70,10 @@ function(friendsEditorHtml, inviteeHtml, friendInputHtml, moment){
 			$dialog.css({width: '', left: '', right:'', top:''});
 			$inviteButton = jQuery('button.invite', $dialog);
 		}
+		
+		this.findDialogTitle = function(){
+			return 'Invite your friends for a group order';
+		};
 		
 		/**
 		 * The role/mode for this dialog.
