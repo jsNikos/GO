@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Insert title here</title>
+<link rel=stylesheet href="/webfile?css=css/ui-lightness/jquery-ui-1.8.23.custom.css" />
+<link rel=stylesheet href="/generated.css" />
+
+<script src="commons/libs/require.js" type="text/javascript"></script>
+<script type="text/javascript">
+requirejs.config({    
+    baseUrl: '/',
+    map:{
+    	'*': {
+    	    'css': 'commons/libs/css',
+    	    'text': 'commons/libs/text'
+    	  }
+    }
+});
+</script>
+<script src="/webfile?js=jquery-1.8.1.min.js,jquery-ui-1.8.23.custom.min.js,LocaleString.js,jquery.cookie.js"></script>
+<script type="text/javascript" src="commons/libs/moment.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="groupOrderInvitation"></div>
+<script type="text/javascript">
+jQuery(function(){
+// 	require(['webordering/groupOrder/GroupInviterController',
+// 	         'commons/libs/underscore'],
+//     function(GroupInviterController){	
+// 		var controller = new GroupInviterController({$el : jQuery('#groupOrderInvitation')});
+// 		controller.init(function(err){
+// 			!err && controller.show();
+// 		});
+// 	});	
+
+	require(['webordering/groupOrder/GroupEditorController',
+	         'commons/libs/underscore'],
+    function(GroupEditorController){	
+		var controller = new GroupEditorController({$el : jQuery('#groupOrderInvitation')});
+		controller.init(function(err){
+			!err && controller.show();
+		});
+	});	
+	
+});
+</script>
+</body>
+</html>

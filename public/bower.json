@@ -1,0 +1,22 @@
+{
+  "name": "grouporder",
+  "version": "0.0.0",
+  "homepage": "nikos",
+  "authors": [
+    "nikos"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "timepicker": "https://github.com/fgelinas/timepicker.git"
+  }
+}
