@@ -5,3 +5,11 @@
 #groupOrderInvitation[data-role="edit"] .smallNote{
 	display: none;
 }
+
+#groupOrderInvitation[data-role="edit"] #groupOrderInvitationNote{
+	display: none;
+}
+
+#groupOrderInvitation[data-role="edit"] .expiration-time{
+	display: none;
+}

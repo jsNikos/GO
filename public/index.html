@@ -25,6 +25,38 @@ requirejs.config({
 </head>
 
 <body>
+<style>
+#groupOrderInfo #friendsList{
+display: block;
+}
+
+.add-friends:hover{
+cursor: pointer;
+text-decoration: underline;
+}
+
+#groupOrderInfo #friendsList li:last-child{
+text-align: center;
+}
+
+
+</style>
+
+<div id="groupOrderInfo" style="display: block;"><div title="Time left until order gets placed." id="timer"><img src="/webfile?name=clock_icon.png&amp;hash=1409043681567"> 28 mins
+</div>
+<div id="statusText">Group order - Live</div>
+<div id="friends">
+<img src="/webfile?name=delete_icon.png&amp;hash=1409043652167" class="cancel-grouporder" width="17px" height="17px;" style="margin-right:10px;" title="click to cancel group-order" />
+<span class="members">
+<img src="/webfile?name=group_icon.png&amp;hash=1409043682637"></span> 1/3</div>
+<ul id="friendsList">
+<li><img src="/webfile?name=live_person_icon.png&amp;hash=1409043686407">  <span class="friendName">niko niko</span> <span class="friendTotal">$6.00</span> <span class="friendReadyStatus"></span> </li>
+<li><img src="/webfile?name=offline_person_icon.png&amp;hash=1409043686697"> nuiko2</li>
+<li><img src="/webfile?name=offline_person_icon.png&amp;hash=1409043686697"> Niko K</li>
+<li><span class="add-friends">... add more friends ...</span></li>
+</ul>
+
+</div>
 
 <div id="groupOrderInvitation"></div>
 <script type="text/javascript">
