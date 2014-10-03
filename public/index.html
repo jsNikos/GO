@@ -61,23 +61,23 @@ text-align: center;
 <div id="groupOrderInvitation"></div>
 <script type="text/javascript">
 jQuery(function(){
-// 	require(['webordering/groupOrder/GroupInviterController',
-// 	         'commons/libs/underscore'],
-//     function(GroupInviterController){	
-// 		var controller = new GroupInviterController({$el : jQuery('#groupOrderInvitation')});
-// 		controller.init(function(err){
-// 			!err && controller.show();
-// 		});
-// 	});	
-
-	require(['webordering/groupOrder/GroupEditorController',
+	require(['webordering/groupOrder/GroupInviterController',
 	         'commons/libs/underscore'],
-    function(GroupEditorController){	
-		var controller = new GroupEditorController({$el : jQuery('#groupOrderInvitation')});
+    function(GroupInviterController){	
+		var controller = new GroupInviterController({$el : jQuery('#groupOrderInvitation')});
 		controller.init(function(err){
 			!err && controller.show();
 		});
 	});	
+
+// 	require(['webordering/groupOrder/GroupEditorController',
+// 	         'commons/libs/underscore'],
+//     function(GroupEditorController){	
+// 		var controller = new GroupEditorController({$el : jQuery('#groupOrderInvitation')});
+// 		controller.init(function(err){
+// 			!err && controller.show();
+// 		});
+// 	});	
 	
 });
 </script>

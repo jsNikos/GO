@@ -273,7 +273,7 @@ function(GroupInviterView, EventEmitter, urlTemplate, moment) {
 		this.requestInviteFriends = function(groupOrder, callback){
 			callback = callback || function(){}; 
 			jQuery.ajax({
-				url: scope.CONTROLLER_URL+'/default/invitations',								  
+				url: scope.CONTROLLER_URL+'/invitations',								  
 				type: 'PUT',
 				contentType : 'application/json',
 				global : false,
@@ -289,7 +289,7 @@ function(GroupInviterView, EventEmitter, urlTemplate, moment) {
 		 */
 		function requestFindFriends(callback){
 			jQuery.ajax({
-				url: scope.CONTROLLER_URL+'/default/friends',								  
+				url: scope.CONTROLLER_URL+'/friends',								  
 				type: 'GET',		
 				global: false,
 				dataType: 'json',
@@ -308,7 +308,7 @@ function(GroupInviterView, EventEmitter, urlTemplate, moment) {
 		function requestRemoveFriend(friend, callback){
 			callback = callback || function(){};				
 			jQuery.ajax({  
-				url: scope.CONTROLLER_URL + urlTemplate.parse('/{groupName}/friends/{email}/').expand(friend),								  
+				url: scope.CONTROLLER_URL + urlTemplate.parse('/friends/{email}/').expand(friend),								  
 				type: 'DELETE',
 				global : false,
 				success: function(){
