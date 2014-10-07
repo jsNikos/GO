@@ -6,60 +6,16 @@
 	margin-left: -280px;
 }
 
-#groupOrderInvitation .smallNote{
-	margin-bottom: 20px;
-}
-
-#groupOrderInvitation .subheader{
-	text-decoration: underline; 	
-}
-
-#groupOrderInvitation .changeAllSelect{
-	margin-left: 10px;
-	cursor: pointer;
-	font-style: italic;	
-}
-
-#groupOrderInvitation .changeAllSelect>span:hover{
-	text-decoration: underline;
-}
-
-#groupOrderInvitation .friends-panel{
-	border: 1px solid #dddddd;
-	border-radius: 4px;
-	overflow: hidden;
-}
-
 #groupOrderInvitation .friends-list{
 	overflow-y: auto;
 	overflow-x: hidden;
-	max-height: 150px;
 }
 
 #groupOrderInvitation .display{
-	display: inline-block;
-	padding: 3px 5px;
-	width: 210px;
-	 white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
-  vertical-align: middle;
 }
 
-#groupOrderInvitation .friends-list .invitee:hover{
-	font-weight: bold;
-}
-
-#groupOrderInvitation .invitee{
-	padding: 2px 0px;
-}
-
-#groupOrderInvitation .invitee.creator{
-	width: auto;
-	background-color: #dddddd;
-	border-radius: 0 0 inherit inherit;
-	padding: 10px 0px;
-	max-height: 150px;
+#groupOrderInvitation .invitee.creator{	
 	overflow-y: auto;
 	overflow-x: hidden;  
 }
@@ -88,65 +44,17 @@
 	visibility: visible;
 }
 
-#groupOrderInvitation .invitee .centered{
-	width: 500px;
-	margin: 0px auto;
-}
-
 #groupOrderInvitation .editor{
 	display: inline-block;
 	vertical-align: middle;
 }
 
-#groupOrderInvitation input[name="Invitee_Name"]{
-	width: 120px;
-}
-
-#groupOrderInvitation input[name="Invitee_Email"]{
-	width: 200px;
-}
-
 #groupOrderInvitation img.add{
-	vertical-align: middle;
 	cursor: pointer;
-	margin-left: 10px;
-}
-
-#groupOrderInvitation img.add.disabled{
-	opacity: 0.4;
-}
-
-#groupOrderInvitation #groupOrderInvitationNote{
-	margin-top: 20px;
-}
-
-#groupOrderInvitation #groupOrderInvitationNote textarea{	
-	border: 1px solid #dddddd;
-	border-radius: 4px;
-	box-sizing: border-box;
-	width: 100%;
-}
-
-#groupOrderInvitation .expiration-time{
-	margin-top: 20px;
-}
-
-#groupOrderInvitation .expiration-time input{
-	width: 70px;
-	text-align: center;
-	margin-top: 5px;
 }
 
 .ui-timepicker.ui-widget{
 	font-size: inherit;
-}
-
-#groupOrderInvitation .validation-msg{
-	margin-top: 10px;
-}
-
-#groupOrderInvitation .input-line .validation-msg{
-	margin: 2px 0px 10px 0px;
 }
 
 #groupOrderInvitation.loading:before{
@@ -155,9 +63,7 @@
 	left: 0%;
 	right: 100%;
 	top: 0%;
-	bottom: 100%;
-	background-color: blue;
-	opacity: 0.4;
+	bottom: 100%;	
 	height: 100%;
 	width: 100%;	
 }
@@ -171,7 +77,6 @@
 	margin-top: -25px;
 	left: 50%;
 	margin-left: -25px;	
-	background-image: url("/webfile?name=loading.gif");
 	background-repeat: no-repeat;
 	background-size: contain;
 }
